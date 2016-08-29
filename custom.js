@@ -107,6 +107,8 @@ $(document).ready(function(){
         searchFor;
     searchValue = $(".search-query").val();
     if (searchValue.length === 0) {
+      $('#All, #Online, #Offline').removeClass('active');
+      $('#All').addClass('active');
       $('.unavailable, .online, .offline').slideDown();
     }
 
