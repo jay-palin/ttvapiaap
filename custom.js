@@ -63,7 +63,7 @@ $(document).ready(function(){
         format: "json"
       },
       success: function (data) {
-        streamerName = "Sorry..."
+        streamerName = "Sorry...";
         fetchData(data);
       },
       error: function () {
@@ -101,11 +101,10 @@ $(document).ready(function(){
   }
 
   //search function (still not totally working)
-  var numKeyUp = 0,
-    searchValue,
-    searchFor,
-    regex;
+
   function search() {
+    var searchValue,
+        searchFor;
     searchValue = $(".search-query").val();
     if (searchValue.length === 0) {
       $('.unavailable, .online, .offline').slideDown();
