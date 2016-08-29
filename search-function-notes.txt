@@ -1,0 +1,53 @@
+function search() {
+  if ($('#search').val().length > 0) {
+    // Display matching names by hiding anything that is not what we want from the  class= "user"
+    var reg = new RegExp($('#search').val(), 'ig');
+    $('.user').css('display', 'none');
+
+    for (var a in AccInfo) {
+      if (reg.test(AccInfo[a].name)) {
+        $('.' + AccInfo[a].name).css('display', 'block');
+      }
+    }
+
+  } else if ($('#search').val().length < 1) {
+    // display everything again
+    $('.user').css('display', 'block');
+  }
+
+  $('#search').unbind('keyup');
+  $('#search').keyup(function() {
+    search();
+  });
+}
+
+$('#search').keyup(function() {
+  search();
+});
+
+//---------------------------------------------------------------------------------------------------------------------------
+
+
+
+function search(){
+    $(".online, .offline, .unavailable").empty();
+    showAll();  
+    var searchQuery = $(".search-query").val();
+    var user = searchQuery.replace(/[^A-Z0-9_]/ig, "");
+    $.ajax({
+      url: "https://api.twitch.tv/kraken/streams/" + user,
+      dataType: "jsonp",
+      data: {
+        format: "json"
+      },
+      success: function (data) {
+        fetchData(data);                    
+      }
+    });
+  }
+  
+  $('.glyphicon-search').click(function(){
+    search();
+  });
+  
+});

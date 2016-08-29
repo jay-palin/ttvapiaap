@@ -1,0 +1,130 @@
+
+body {
+  background-color: black;
+}
+
+img {
+  border: solid white 0.5vmin;
+  border-radius: 50%;
+  width: 10vmin;
+  margin: 1vmin;
+}
+
+h1 {
+
+  font-size: 6vmin;
+}
+
+#name {
+  text-align: center;
+  padding: 4vmin;
+}
+
+#status {
+  text-align: center;
+  padding: 4vmin;
+}
+
+#custom-search-input {
+  margin:0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+#custom-search-input .search-query {
+  padding-right: 3px;
+  padding-right: 4px \9;
+  padding-left: 3px;
+  padding-left: 4px \9;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#custom-search-input button {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 2px 5px;
+  margin-top: 2px;
+  position: relative;
+  left: -28px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color:#6441A5;
+}
+
+.container {
+  background-color: white;
+}
+
+.header {
+  padding: 5vmin;
+}
+
+.accounts {
+  margin: 1vmin;
+  padding: 2vmin;
+  border-radius: 5px;
+}
+
+.menu-button {
+  color: white;
+  font-size: 3vmin;
+  background-color: #6441A5;
+}
+
+.menu-button:hover {
+  color: white;
+  background-color: #262626;
+}
+
+.active {
+  background-color: #262626;
+  color: white;
+}
+
+.btn:focus,.btn:active {
+  color: white;
+  outline: none !important;
+}
+
+a, a:hover {
+  color: white;
+}
+
+.online {
+  color: white;
+  background-color: #6441A5;
+}
+
+.offline {
+  color: white;
+  background-color: #262626;
+}
+
+.unavailable {
+  color: white;
+  background-color: #B9A3E3;
+}
+
+.search-query:focus + button {
+  z-index: 3;
+}
+
+.input-group {
+  margin-left: auto;
+  margin-right: auto;
+  left: 12px;
+  margin-bottom: 3vmin;
+}
+
+.inline {
+  display: inline;
+}

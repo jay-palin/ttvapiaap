@@ -2,14 +2,36 @@
 <html>
   <head>
     <title>Twitch API app</title>
-
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
     <div class="container">
-      <section id="header" class="text-center">
-        <h1>Who's on Twitch!?</h1>
-      </section>
-      
+      <div class="row text-center header">
+		    <img class="inline" src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/TwitchGlitchIcon_PurpleonWhite.png"><h1 class="inline">Who's on Twitch!?</h1>
+        <div id="custom-search-input">
+          <div class="input-group col-md-4">
+            <input type="text" class="  search-query form-control" placeholder="Search" />
+              <span class="input-group-btn">
+                <button class="btn btn-danger" type="button">
+                  <span class=" glyphicon glyphicon-search"></span>
+                </button>
+              </span>
+          </div>
+        </div>
+	    </div>
+      <div class="row text-center">
+        <div class="col-md-4 col-xs-4"><button id="All" class="active btn menu-button">All</button></div>
+        <div class="col-md-4 col-xs-4"><button id="Online" class="btn menu-button">Online</button></div>
+        <div class="col-md-4 col-xs-4"><button id="Offline" class="btn menu-button">Offline</button></div>
+      </div>
+      <section class="results"></section>
+      <footer class="text-center">
+        <h6>Jay Palin 2016</h6>
+      </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="custom.js"></script>
   </body>
 </html>
