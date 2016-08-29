@@ -2,7 +2,7 @@
 
 $(document).ready(function(){
 
-  var streamers = ["ESL_SC2", "Pooddliedoo", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas", "brunofin", "MedryBW"];
+  var streamers = ["ESL_SC2", "MedryBW", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas", "brunofin", "Pooddliedoo"];
 
   var status, url, picture;
   var pic = "http://dummyimage.com/50x50/381761/e8e8e8.jpg&text=0x3F";
